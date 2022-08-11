@@ -1,0 +1,26 @@
+ID,Name,CID,SCID,Path
+44,V-Neck T-Shirt,C-1,SC-1,"['images/Image_1-1.jpg', 'images/Image_1-2.jpg', 'images/Image_1-3.jpg']"
+45,Hoodie,C-1,SC-2,"['images/Image_2-1.jpg', 'images/Image_2-2.jpg', 'images/Image_2-3.jpg', 'images/Image_2-4.jpg']"
+46,Hoodie with Logo,C-1,SC-2,['images/Image_3.jpg']
+47,T-Shirt,C-1,SC-1,['images/Image_4.jpg']
+48,Beanie,C-1,SC-3,['images/Image_5.jpg']
+58,Belt,C-1,SC-3,['images/Image_6.jpg']
+60,Cap,C-1,SC-3,['images/Image_7.jpg']
+62,Sunglasses,C-1,SC-3,['images/Image_8.jpg']
+64,Hoodie with Pocket,C-1,SC-2,['images/Image_9.jpg']
+66,Hoodie with Zipper,C-1,SC-2,['images/Image_10.jpg']
+68,Long Sleeve Tee,C-1,SC-1,['images/Image_11.jpg']
+70,Polo,C-1,SC-1,['images/Image_12.jpg']
+73,Album,C-2,NaN,['images/Image_13.jpg']
+75,Single,C-2,NaN,['images/Image_14.jpg']
+76,V-Neck T-Shirt - Red,NaN,NaN,['images/Image_15.jpg']
+77,V-Neck T-Shirt - Green,NaN,NaN,['images/Image_16.jpg']
+78,V-Neck T-Shirt - Blue,NaN,NaN,['images/Image_17.jpg']
+79,"Hoodie - Red, No",NaN,NaN,['images/Image_18.jpg']
+80,"Hoodie - Green, No",NaN,NaN,['images/Image_19.jpg']
+81,"Hoodie - Blue, No",NaN,NaN,['images/Image_20.jpg']
+83,T-Shirt with Logo,C-1,SC-1,['images/Image_21.jpg']
+85,Beanie with Logo,C-1,SC-3,['images/Image_22.jpg']
+87,Logo Collection,C-1,NaN,"['images/Image_23-1.jpg', 'images/Image_23-2.jpg', 'images/Image_23-3.jpg', 'images/Image_23-4.jpg']"
+89,WordPress Pennant,C-3,NaN,['images/Image_24.jpg']
+90,"Hoodie - Blue, Yes",NaN,NaN,['images/Image_25.jpg']

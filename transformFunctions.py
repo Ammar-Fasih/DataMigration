@@ -3,34 +3,6 @@ from types import NoneType
 import urllib.request
 import os
 
-# Extraction Phase
-
-def extractUrlData(url, rawFile):
-
-    # Will extract file from url and save it as a csv
-    # url = enter the desired url
-    # rawFile = enter the desired filename to be saved
-
-    raw_df = pd.read_csv(url)
-    raw_df.to_csv(rawFile,index = False)
-
-    print(rawFile +' has been created')
-
-def refineRawData(rawFile,refineFile,coltoExtract=[]):
-
-    # will extract the required columns from the rawfile and save it to new csv
-    # rawFile = csv from where we need to extractUrlData
-    # refineFile = csv where we need to save extract columns
-    # coltoExtract = list of columns which we need to extract
-
-    raw_df = pd.read_csv(rawFile)
-    df = raw_df.filter(coltoExtract)
-    df.to_csv(refineFile,index=False)
-
-    print(refineFile +' has been created')
-
-# Transformation Phase
-
 def colsplit(file,maincol,delimiter,splitcols=[]):
 
     # will split any column into required columns with a defined deilmiter
@@ -41,7 +13,6 @@ def colsplit(file,maincol,delimiter,splitcols=[]):
 
     df = pd.read_csv(file)
     df[splitcols] = df[maincol].str.split(delimiter,expand=True)
-    df['Categories'] = df['Categories'].str.strip()  #this has to be generalized
     df.to_csv(file,index=False)
 
     print(maincol+' has been splitted')
@@ -161,7 +132,6 @@ def img_map(filepath='images/'):
             os.makedirs(filepath)
     if ',' in b['Images']:
         b['Images'] = b['Images'].split()
-        print(type(b['Images']))
     if (isinstance(b['Images'],list)):
         for x,y in enumerate(b['Images']):
             filename = 'Image_'+str(a+1)+'-'+str(x+1)
@@ -177,6 +147,7 @@ def img_map(filepath='images/'):
 
 def df_drop(file,dropcol=[]):
 
+
     # will drop the unwanted columns from a csv and update iter
     # file = enter the file name for modification
     # dropcol = enter list of columns to be dropped
@@ -187,24 +158,5 @@ def df_drop(file,dropcol=[]):
 
     print('Requested columns dropped')
 
-
 if __name__ == '__main__':
-
-    url = 'https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv'
-
-    # extractUrlData(url,'rawfile.csv')
-
-    # refineRawData('rawfile.csv','refine.csv',['ID','Name','Categories','Images'])
-
-    # colsplit('refine.csv','Categories','>',['Categories','Sub_Categories'])
-
-    # idGeneration('refine.csv','Categories','CAT-','category','catID.csv')
-
-    # idGeneration('refine.csv','Sub_Categories','SUB_C-','subcategory','subCatID.csv')
-
-    # id_mapping('refine.csv','y','y','y')
-
-    # df_strip('trystrip.csv',['Categories','CAT-ID'])
-
-    # df_drop('refine.csv',['Images'])
-
+    pass

@@ -1,5 +1,7 @@
 import extractFunctions
 import transformFunctions
+import LoadData
+from functions import logfunc
 
 url = 'https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv'
 
@@ -15,7 +17,8 @@ transformFunctions.idGeneration('refineData.csv','Categories','CAT-','category',
 
 transformFunctions.idGeneration('refineData.csv','Sub_Categories','SUBCAT-','subcategory','subcatID.csv')
 
-# transformFunctions.id_mapping('refineData.csv','y','y','y')
+transformFunctions.id_mapping('refineData.csv','y','y','y')
 
 transformFunctions.df_drop('refineData.csv',['Categories','Sub_Categories','Images'])
 
+LoadData.load('refineData.csv')

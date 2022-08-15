@@ -1,4 +1,5 @@
 import pandas as pd
+from functions import logfunc
 
 def extractUrlData(url, rawFile):
 
@@ -10,6 +11,7 @@ def extractUrlData(url, rawFile):
     raw_df.to_csv(rawFile,index = False)
 
     print(rawFile +' has been created')
+    logfunc(f'{rawFile} has been created','info')
 
 def refineRawData(rawFile,refineFile,coltoExtract=[]):
 
@@ -22,6 +24,7 @@ def refineRawData(rawFile,refineFile,coltoExtract=[]):
     df = raw_df.filter(coltoExtract)
     df.to_csv(refineFile,index=False)
 
-    print(refineFile +' has been created')
+    print(refineFile + ' has been created')
+    logfunc(f'{refineFile} has been created','info')
 
 

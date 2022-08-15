@@ -2,6 +2,7 @@ import pandas as pd
 from types import NoneType
 import urllib.request
 import os
+import logging
 
 # Extraction Phase
 
@@ -188,6 +189,47 @@ def df_drop(file,dropcol=[]):
     print('Requested columns dropped')
 
 
+def dataload(transData: str,destination=None) -> None:
+    """
+    Function to load transformed data `transdata`.
+
+    Parameters: 
+        transData: The transformed data to be loaded.
+        destination: The format of destination to be loaded to.
+
+    Return: 
+        None.
+    """
+
+    df = pd.read_csv(transData)
+    print(df.columns.values)
+    for rows in df.itertuples(index=False,name=None):
+        try:
+            print(rows)
+        except Exception as e:
+            print(e)
+
+def logfunc(msg,level):
+    import logging
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format="{asctime} {levelname:<8} {message}",
+        style='{',
+        filename='log.log',
+        filemode='w'
+    )
+    if level == 'debug':
+       return logging.debug(msg)
+    elif level == 'info':
+       return logging.info(msg)
+    elif level == 'warning':
+       return logging.warning(msg)
+    elif level == 'error':
+       return logging.error(msg)
+    elif level == 'critical':
+       return logging.critical(msg)
+
+
 if __name__ == '__main__':
 
     url = 'https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv'
@@ -208,3 +250,4 @@ if __name__ == '__main__':
 
     # df_drop('refine.csv',['Images'])
 
+    #dataload("refineData.csv")

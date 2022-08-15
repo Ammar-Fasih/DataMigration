@@ -1,7 +1,9 @@
+import functools
 import pandas as pd
 from types import NoneType
 import urllib.request
 import os
+from functions import logfunc
 
 def colsplit(file,maincol,delimiter,splitcols=[]):
 
@@ -15,7 +17,8 @@ def colsplit(file,maincol,delimiter,splitcols=[]):
     df[splitcols] = df[maincol].str.split(delimiter,expand=True)
     df.to_csv(file,index=False)
 
-    print(maincol+' has been splitted')
+    print(maincol + ' has been splitted')
+    logfunc(f'{maincol} has been splitted','info')
 
 def df_strip(file,stripcols=[]):
 
@@ -28,6 +31,7 @@ def df_strip(file,stripcols=[]):
         df[col] = df[col].str.strip()
     df.to_csv(file,index=False)
     print('strip function completed')
+    logfunc('strip function execution complete','info')
 
 def idGeneration(file,maincol,idprefix,idheading,catidfile):
 
@@ -51,6 +55,7 @@ def idGeneration(file,maincol,idprefix,idheading,catidfile):
 
     id_df.to_csv(catidfile,index=False)
     print(maincol +' IDs have been generated')
+    logfunc(f'{maincol} IDs have been generated','info')
 
 def id_mapping(onto_map,cat,scat,img):
 
@@ -80,10 +85,13 @@ def id_mapping(onto_map,cat,scat,img):
   
     if cat == 'y':
         df = df.assign(CAT_ID=CID)
+        logfunc('category ID Mapping completed','info')
     if scat == 'y':
         df = df.assign(SUBCAT_ID=SCID)
+        logfunc('Sub-category ID Mapping completed','info')
     if img == 'y':
         df = df.assign(Img_Path=imgPath)
+        logfunc('Images downloaded and Mapping completed','info')
         
     print('Mapping has been completed')
     # print(df)
@@ -157,6 +165,7 @@ def df_drop(file,dropcol=[]):
     df_new.to_csv(file,index=False)
 
     print('Requested columns dropped')
+    logfunc('Requested columns dropped','info')
 
 if __name__ == '__main__':
     pass

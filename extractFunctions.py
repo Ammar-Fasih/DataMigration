@@ -1,4 +1,5 @@
 import pandas as pd
+import logFunctions
 
 def extractUrlData(url, rawFile):
 
@@ -9,7 +10,7 @@ def extractUrlData(url, rawFile):
     raw_df = pd.read_csv(url)
     raw_df.to_csv(rawFile,index = False)
 
-    print(rawFile +' has been created')
+    logFunctions.logging.info(f' {rawFile} has been created from source {url}')
 
 def refineRawData(rawFile,refineFile,coltoExtract=[]):
 
@@ -22,6 +23,6 @@ def refineRawData(rawFile,refineFile,coltoExtract=[]):
     df = raw_df.filter(coltoExtract)
     df.to_csv(refineFile,index=False)
 
-    print(refineFile +' has been created')
+    logFunctions.logging.info(f' {refineFile} file has been created from original file {rawFile} and contains following columns {str(coltoExtract)}')
 
 

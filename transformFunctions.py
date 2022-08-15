@@ -2,6 +2,7 @@ import pandas as pd
 from types import NoneType
 import urllib.request
 import os
+import logFunctions
 
 def colsplit(file,maincol,delimiter,splitcols=[]):
 
@@ -15,7 +16,7 @@ def colsplit(file,maincol,delimiter,splitcols=[]):
     df[splitcols] = df[maincol].str.split(delimiter,expand=True)
     df.to_csv(file,index=False)
 
-    print(maincol+' has been splitted')
+    logFunctions.logging.info(f' {maincol} has been splitted into {str(len(splitcols))} columns, i.e. {str(splitcols)}')
 
 def df_strip(file,stripcols=[]):
 
@@ -27,9 +28,9 @@ def df_strip(file,stripcols=[]):
     for col in stripcols:
         df[col] = df[col].str.strip()
     df.to_csv(file,index=False)
-    print('strip function completed')
+    logFunctions.logging.info(f' Following {str(len(stripcols))} columns has been striped, i.e. {str(stripcols)}') 
 
-def idGeneration(file,maincol,idprefix,idheading,catidfile):
+def idGeneration(file,maincol,idprefix,idheading,idfile):
 
     # will generate unique ids for the required columns elements and save it to new csv
     # file = original file name
@@ -49,8 +50,8 @@ def idGeneration(file,maincol,idprefix,idheading,catidfile):
     elif idheading == 'subcategory':
         id_df['SUBCAT-ID'] = ID
 
-    id_df.to_csv(catidfile,index=False)
-    print(maincol +' IDs have been generated')
+    id_df.to_csv(idfile,index=False)
+    logFunctions.logging.info(f' {str(len(ID))} IDs have been generated for {maincol} into file {idfile}')
 
 def id_mapping(onto_map,cat,scat,img):
 
@@ -80,13 +81,15 @@ def id_mapping(onto_map,cat,scat,img):
   
     if cat == 'y':
         df = df.assign(CAT_ID=CID)
+        logFunctions.logging.info(f' {str(len(CID))} CAT_ID have been mapped')
     if scat == 'y':
         df = df.assign(SUBCAT_ID=SCID)
+        logFunctions.logging.info(f' {str(len(SCID))} SUBCAT_ID have been mapped')
     if img == 'y':
         df = df.assign(Img_Path=imgPath)
+        logFunctions.logging.info(f' {str(len(imgPath))} images have been mapped')
         
-    print('Mapping has been completed')
-    # print(df)
+    # logFunctions.logging.info(df)
     df.to_csv(onto_map,index=False)
 
 def catId_map(catidfile):
@@ -100,7 +103,7 @@ def catId_map(catidfile):
             x =(cat_df['CAT-ID'][c])
             break
         elif (isinstance(b['Categories'],float)):
-            x =('NaN')
+            x =('--')
             break
     return x
 
@@ -116,7 +119,7 @@ def subCatId_map(subCatIdFile):
             x=(sub_cat_df['SUBCAT-ID'][e])
             break
         elif (isinstance(b['Sub_Categories'],float)) | (isinstance(b['Sub_Categories'],NoneType)):
-            x=('NaN')
+            x=('--')
             break
     return x
 
@@ -136,12 +139,12 @@ def img_map(filepath='images/'):
         for x,y in enumerate(b['Images']):
             filename = 'Image_'+str(a+1)+'-'+str(x+1)
             full_path = filepath + filename + '.jpg'
-            urllib.request.urlretrieve(y,full_path)
+            # urllib.request.urlretrieve(y,full_path)
             rowpath.append(full_path)
     else:
         filename = 'Image_'+str(a+1)
         full_path = filepath + filename + '.jpg'
-        urllib.request.urlretrieve(b['Images'],full_path)
+        # urllib.request.urlretrieve(b['Images'],full_path)
         rowpath.append(full_path)
     return rowpath
 
@@ -156,7 +159,7 @@ def df_drop(file,dropcol=[]):
     df_new = df.drop(dropcol,axis=1)
     df_new.to_csv(file,index=False)
 
-    print('Requested columns dropped')
+    logFunctions.logging.info(f' {str(len(dropcol))} columns have been dropped, namely: {dropcol}')
 
 if __name__ == '__main__':
     pass

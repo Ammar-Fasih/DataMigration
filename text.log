@@ -202,3 +202,95 @@ lalaalal
 2022-08-15 19:46:28,696 INFO  25 SUBCAT_ID have been mapped
 2022-08-15 19:46:28,696 INFO  25 images have been mapped
 2022-08-15 19:46:28,696 INFO  3 columns have been dropped, namely: ['Categories', 'Sub_Categories', 'Images']
+
+
+
+2022-08-15 21:09:33,836  INFO  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx NEW INTERVAL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2022-08-15 21:09:33,883  INFO   refineData.csv file has been loaded succesfully
+2022-08-15 21:09:35,054  INFO   rawData.csv has been created from source https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv
+2022-08-15 21:09:35,072  INFO   refineData.csv file has been created from original file rawData.csv and contains following columns ['ID', 'Name', 'Categories', 'Images']
+2022-08-15 21:09:35,087  INFO   Categories has been splitted into 2 columns, i.e. ['Categories', 'Sub_Categories']
+2022-08-15 21:09:35,087  INFO   Following 1 columns has been striped, i.e. ['Categories']
+2022-08-15 21:09:35,103  INFO   3 IDs have been generated for Categories into file catID.csv
+2022-08-15 21:09:35,119  INFO   0 IDs have been generated for Sub_Ca	egories into file subcatID.csv
+2022-08-15 21:09:47,474  INFO   25 CAT_ID have been mapped
+
+
+
+2022-08-15 21:10:16,274  INFO  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx NEW INTERVAL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2022-08-15 21:10:16,336  INFO   refineData.csv file has been loaded succesfully
+2022-08-15 21:10:16,685  INFO   rawData.csv has been created from source https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv
+2022-08-15 21:10:16,705  INFO   refineData.csv file has been created from original file rawData.csv and contains following columns ['ID', 'Name', 'Categories', 'Images']
+2022-08-15 21:10:16,715  INFO   Categories has been splitted into 2 columns, i.e. ['Categories', 'Sub_Categories']
+2022-08-15 21:10:16,726  INFO   Following 1 columns has been striped, i.e. ['Categories']
+2022-08-15 21:10:16,733  INFO   3 IDs have been generated for Categories into file catID.csv
+2022-08-15 21:10:16,742  INFO   0 IDs have been generated for Sub_Ca	egories into file subcatID.csv
+
+
+
+2022-08-15 21:10:57,861  INFO  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx NEW INTERVAL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2022-08-15 21:10:57,910  INFO   refineData.csv file has been loaded succesfully
+2022-08-15 21:10:58,288  INFO   rawData.csv has been created from source https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv
+2022-08-15 21:10:58,306  INFO   refineData.csv file has been created from original file rawData.csv and contains following columns ['ID', 'Name', 'Categories', 'Images']
+2022-08-15 21:10:58,315  INFO   Categories has been splitted into 2 columns, i.e. ['Categories', 'Sub_Categories']
+2022-08-15 21:10:58,322  INFO   Following 1 columns has been striped, i.e. ['Categories']
+2022-08-15 21:10:58,328  INFO   3 IDs have been generated for Categories into file catID.csv
+2022-08-15 21:10:58,333  INFO   0 IDs have been generated for Sub_Ca	egories into file subcatID.csv
+
+
+
+2022-08-15 21:12:09,986  INFO  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx NEW INTERVAL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2022-08-15 21:12:10,064  INFO   refineData.csv file has been loaded succesfully
+2022-08-15 21:12:10,406  INFO   rawData.csv has been created from source https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv
+2022-08-15 21:12:10,426  INFO   refineData.csv file has been created from original file rawData.csv and contains following columns ['ID', 'Name', 'Categories', 'Images']
+2022-08-15 21:12:10,435  INFO   Categories has been splitted into 2 columns, i.e. ['Categories', 'Sub_Categories']
+2022-08-15 21:12:10,444  INFO   Following 1 columns has been striped, i.e. ['Categories']
+2022-08-15 21:12:10,452  INFO   3 IDs have been generated for Categories into file catID.csv
+2022-08-15 21:12:10,458  INFO   0 IDs have been generated for Sub_Ca	egories into file subcatID.csv
+2022-08-15 21:12:15,834  INFO   25 CAT_ID have been mapped
+
+
+
+2022-08-15 21:12:28,049  INFO  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx NEW INTERVAL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2022-08-15 21:12:28,093  INFO   refineData.csv file has been loaded succesfully
+2022-08-15 21:12:28,494  INFO   rawData.csv has been created from source https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv
+2022-08-15 21:12:28,506  INFO   refineData.csv file has been created from original file rawData.csv and contains following columns ['ID', 'Name', 'Categories', 'Images']
+2022-08-15 21:12:28,506  INFO   Categories has been splitted into 2 columns, i.e. ['Categories', 'Sub_Categories']
+2022-08-15 21:12:28,506  INFO   Following 1 columns has been striped, i.e. ['Categories']
+2022-08-15 21:12:28,521  INFO   3 IDs have been generated for Categories into file catID.csv
+2022-08-15 21:12:28,521  INFO   0 IDs have been generated for Sub_Ca	egories into file subcatID.csv
+
+
+
+2022-08-15 21:14:37,624  INFO  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx NEW INTERVAL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2022-08-15 21:14:37,719  INFO   refineData.csv file has been loaded succesfully
+2022-08-15 21:14:38,434  INFO   rawData.csv has been created from source https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv
+2022-08-15 21:14:38,466  INFO   refineData.csv file has been created from original file rawData.csv and contains following columns ['ID', 'Name', 'Categories', 'Images']
+2022-08-15 21:14:38,481  INFO   Categories has been splitted into 2 columns, i.e. ['Categories', 'Sub_Categories']
+2022-08-15 21:14:38,481  INFO   Following 1 columns has been striped, i.e. ['Categories']
+2022-08-15 21:14:38,481  INFO   3 IDs have been generated for Categories into file catID.csv
+2022-08-15 21:14:38,497  INFO   0 IDs have been generated for Sub_Ca	egories into file subcatID.csv
+
+
+
+2022-08-15 21:15:18,678  INFO  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx NEW INTERVAL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2022-08-15 21:15:18,716  INFO   refineData.csv file has been loaded succesfully
+2022-08-15 21:15:19,066  INFO   rawData.csv has been created from source https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv
+2022-08-15 21:15:19,090  INFO   refineData.csv file has been created from original file rawData.csv and contains following columns ['ID', 'Name', 'Categories', 'Images']
+2022-08-15 21:15:19,098  INFO   Categories has been splitted into 2 columns, i.e. ['Categories', 'Sub_Categories']
+2022-08-15 21:15:19,104  INFO   Following 1 columns has been striped, i.e. ['Categories']
+2022-08-15 21:15:19,113  INFO   3 IDs have been generated for Categories into file catID.csv
+2022-08-15 21:15:19,119  INFO   0 IDs have been generated for Sub_Ca	egories into file subcatID.csv
+
+
+
+2022-08-15 21:16:36,901  INFO  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx NEW INTERVAL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2022-08-15 21:16:36,955  INFO   refineData.csv file has been loaded succesfully
+2022-08-15 21:16:37,288  INFO   rawData.csv has been created from source https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv
+2022-08-15 21:16:37,303  INFO   refineData.csv file has been created from original file rawData.csv and contains following columns ['ID', 'Name', 'Categories', 'Images']
+2022-08-15 21:16:37,319  INFO   Categories has been splitted into 2 columns, i.e. ['Categories', 'Sub_Categories']
+2022-08-15 21:16:37,319  INFO   Following 1 columns has been striped, i.e. ['Categories']
+2022-08-15 21:16:37,335  INFO   3 IDs have been generated for Categories into file catID.csv
+2022-08-15 21:16:37,335  INFO   3 IDs have been generated for Sub_Categories into file subcatID.csv
+2022-08-15 21:16:44,129  INFO   25 CAT_ID have been mapped
+2022-08-15 21:16:44,129  INFO   25 SUBCAT_ID have been mapped

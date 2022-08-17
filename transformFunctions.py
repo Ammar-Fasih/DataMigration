@@ -53,7 +53,7 @@ def idGeneration(file,maincol,idprefix,idheading,idfile):
     id_df.to_csv(idfile,index=False)
     logFunctions.logging.info(f' {str(len(ID))} IDs have been generated for {maincol} into file {idfile}')
 
-def id_mapping(onto_map,cat,scat,img):
+def id_mapping(onto_map,cat = str | None ,scat = str | None ,img = str | None):
 
     # will map IDs on original file
     # onto_map = original file on which mapping Required

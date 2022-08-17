@@ -1,26 +1,26 @@
-ID,Name,CAT_ID,SUBCAT_ID,Img_Path
-44,V-Neck T-Shirt,CAT-1,SUBCAT-1,"['images/Image_1-1.jpg', 'images/Image_1-2.jpg', 'images/Image_1-3.jpg']"
-45,Hoodie,CAT-1,SUBCAT-2,"['images/Image_2-1.jpg', 'images/Image_2-2.jpg', 'images/Image_2-3.jpg', 'images/Image_2-4.jpg']"
-46,Hoodie with Logo,CAT-1,SUBCAT-2,['images/Image_3.jpg']
-47,T-Shirt,CAT-1,SUBCAT-1,['images/Image_4.jpg']
-48,Beanie,CAT-1,SUBCAT-3,['images/Image_5.jpg']
-58,Belt,CAT-1,SUBCAT-3,['images/Image_6.jpg']
-60,Cap,CAT-1,SUBCAT-3,['images/Image_7.jpg']
-62,Sunglasses,CAT-1,SUBCAT-3,['images/Image_8.jpg']
-64,Hoodie with Pocket,CAT-1,SUBCAT-2,['images/Image_9.jpg']
-66,Hoodie with Zipper,CAT-1,SUBCAT-2,['images/Image_10.jpg']
-68,Long Sleeve Tee,CAT-1,SUBCAT-1,['images/Image_11.jpg']
-70,Polo,CAT-1,SUBCAT-1,['images/Image_12.jpg']
-73,Album,CAT-2,--,['images/Image_13.jpg']
-75,Single,CAT-2,--,['images/Image_14.jpg']
-76,V-Neck T-Shirt - Red,--,--,['images/Image_15.jpg']
-77,V-Neck T-Shirt - Green,--,--,['images/Image_16.jpg']
-78,V-Neck T-Shirt - Blue,--,--,['images/Image_17.jpg']
-79,"Hoodie - Red, No",--,--,['images/Image_18.jpg']
-80,"Hoodie - Green, No",--,--,['images/Image_19.jpg']
-81,"Hoodie - Blue, No",--,--,['images/Image_20.jpg']
-83,T-Shirt with Logo,CAT-1,SUBCAT-1,['images/Image_21.jpg']
-85,Beanie with Logo,CAT-1,SUBCAT-3,['images/Image_22.jpg']
-87,Logo Collection,CAT-1,--,"['images/Image_23-1.jpg', 'images/Image_23-2.jpg', 'images/Image_23-3.jpg', 'images/Image_23-4.jpg']"
-89,WordPress Pennant,CAT-3,--,['images/Image_24.jpg']
-90,"Hoodie - Blue, Yes",--,--,['images/Image_25.jpg']
+ID,Name,Categories,Images,Sub_Categories,CAT_ID,SUBCAT_ID
+44,V-Neck T-Shirt,Clothing,"https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/vneck-tee-2.jpg, https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/vnech-tee-green-1.jpg, https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/vnech-tee-blue-1.jpg", Tshirts,CAT-1,SUBCAT-1
+45,Hoodie,Clothing,"https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-2.jpg, https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-blue-1.jpg, https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-green-1.jpg, https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-with-logo-2.jpg", Hoodies,CAT-1,SUBCAT-2
+46,Hoodie with Logo,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-with-logo-2.jpg, Hoodies,CAT-1,SUBCAT-2
+47,T-Shirt,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/tshirt-2.jpg, Tshirts,CAT-1,SUBCAT-1
+48,Beanie,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/beanie-2.jpg, Accessories,CAT-1,SUBCAT-3
+58,Belt,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/belt-2.jpg, Accessories,CAT-1,SUBCAT-3
+60,Cap,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/cap-2.jpg, Accessories,CAT-1,SUBCAT-3
+62,Sunglasses,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/sunglasses-2.jpg, Accessories,CAT-1,SUBCAT-3
+64,Hoodie with Pocket,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-with-pocket-2.jpg, Hoodies,CAT-1,SUBCAT-2
+66,Hoodie with Zipper,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-with-zipper-2.jpg, Hoodies,CAT-1,SUBCAT-2
+68,Long Sleeve Tee,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/long-sleeve-tee-2.jpg, Tshirts,CAT-1,SUBCAT-1
+70,Polo,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/polo-2.jpg, Tshirts,CAT-1,SUBCAT-1
+73,Album,Music,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/album-1.jpg,,CAT-2,--
+75,Single,Music,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/single-1.jpg,,CAT-2,--
+76,V-Neck T-Shirt - Red,,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/vneck-tee-2.jpg,,--,--
+77,V-Neck T-Shirt - Green,,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/vnech-tee-green-1.jpg,,--,--
+78,V-Neck T-Shirt - Blue,,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/vnech-tee-blue-1.jpg,,--,--
+79,"Hoodie - Red, No",,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-2.jpg,,--,--
+80,"Hoodie - Green, No",,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-green-1.jpg,,--,--
+81,"Hoodie - Blue, No",,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-blue-1.jpg,,--,--
+83,T-Shirt with Logo,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/t-shirt-with-logo-1.jpg, Tshirts,CAT-1,SUBCAT-1
+85,Beanie with Logo,Clothing,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/beanie-with-logo-1.jpg, Accessories,CAT-1,SUBCAT-3
+87,Logo Collection,Clothing,"https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/logo-1.jpg, https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/beanie-with-logo-1.jpg, https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/t-shirt-with-logo-1.jpg, https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-with-logo-2.jpg",,CAT-1,--
+89,WordPress Pennant,Decor,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/pennant-1.jpg,,CAT-3,--
+90,"Hoodie - Blue, Yes",,https://woocommercecore.mystagingwebsite.com/wp-content/uploads/2017/12/hoodie-with-logo-2.jpg,,--,--

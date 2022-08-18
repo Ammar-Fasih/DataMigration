@@ -19,6 +19,8 @@ def logFunc(msg,level,log_start='inprocess'):
         filename=fileName, 
         filemode='w'
     )
+
+
     #Setting UP logger with handler
     logger = logging.getLogger()
     # logger.setLevel(logging.INFO)
@@ -29,8 +31,7 @@ def logFunc(msg,level,log_start='inprocess'):
 
     #Text Formatting
     if len(msg) > 60:
-        ftext = textwrap.TextWrapper(width=70,initial_indent='',subsequent_indent=' '*33,#break_long_words= False,
-        break_on_hyphens= False).fill(text=msg)
+        ftext = textwrap.TextWrapper(width=70,initial_indent='',subsequent_indent=' '*33,break_long_words= False,break_on_hyphens= False).fill(text=msg)
     else:
         ftext=msg
 

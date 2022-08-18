@@ -1,7 +1,7 @@
 import pandas as pd
-from globalFunctions import logfunc
+from globalFunctions import logFunc
 
-def load(transData: str,destination=None) -> list:
+def loadData(transData: str,destination=None) -> list:
     '''
     Function to load transformed data `transdata`.
  
@@ -24,9 +24,9 @@ Currently returns nothing. Just prints.
         try:
             print(rows)
         except Exception as e:
-            logfunc(e,'error')
+            logFunc(e,'error')
             errors.append(e)
             return errors
     
     print('\nThe loading process of transformed data has been completed')
-    logfunc(f'The loading process of transformed data has been completed with the following exceptions {errors}','info')
+    logFunc(f'The loading process of transformed data has been completed with the following exceptions {errors}','info')

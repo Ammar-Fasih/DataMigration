@@ -20,7 +20,7 @@ def colSplit(file,maincol,delimiter,splitcols=[]):
     print(maincol + ' has been splitted')
     logFunc(f'Column splitted into {str(len(splitcols))} Columns','info',False)
 
-def df_strip(file,stripcols=[]):
+def dfStrip(file,stripcols=[]):
 
     # will strip the required columns, removing the whitespaces and save it to existing csv
     # file = original file name
@@ -60,7 +60,7 @@ def idGeneration(file,maincol,idprefix,idheading,idfile):
     logFunc(f'IDs generated: {str(len(ID))}','info')
     logFunc(f'File created: {idfile}','info',False)
 
-def id_mapping(onto_map,cat,scat,img):
+def idMapping(onto_map,cat,scat,img):
     # will map IDs on original file
     # onto_map = original file on which mapping Required
     # cat = enter 'y' to map it
@@ -82,12 +82,12 @@ def id_mapping(onto_map,cat,scat,img):
     for a,b in df.iterrows():
         i=0
         if cat == 'y':
-            CID.append(catId_map(cat_input))
+            CID.append(catIDMap(cat_input))
         if scat == 'y':
-            SCID.append(subCatId_map(subcat_input))
+            SCID.append(subCatIdMap(subcat_input))
             
         if img == 'y':
-            imgPath.append(img_map())
+            imgPath.append(imgMap())
             
             
   
@@ -108,7 +108,7 @@ def id_mapping(onto_map,cat,scat,img):
     # print(df)
     df.to_csv(onto_map,index=False)
 
-def catId_map(catidfile):
+def catIDMap(catidfile):
 
     # will execute mapping of catId
     # catidfile = enter the catid csv file name
@@ -123,7 +123,7 @@ def catId_map(catidfile):
             break
     return x
 
-def subCatId_map(subCatIdFile):
+def subCatIdMap(subCatIdFile):
 
     # will exexute mapping of subCatId
     # subCatIdFile = enter the subcatID csv file name
@@ -139,7 +139,7 @@ def subCatId_map(subCatIdFile):
             break
     return x
 
-def img_map(filepath='images/'):
+def imgMap(filepath='images/'):
 
     # will execute the mapping of image
     # filepath = enter the path to put downloded files
@@ -164,7 +164,7 @@ def img_map(filepath='images/'):
         rowpath.append(full_path)
     return rowpath
 
-def df_drop(file,dropcol=[]):
+def dfDrop(file,dropcol=[]):
 
 
     # will drop the unwanted columns from a csv and update iter

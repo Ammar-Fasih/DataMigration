@@ -1,13 +1,18 @@
 import pandas as pd
-from functions import logfunc
+from globalFunctions import logfunc
 
 def load(transData: str,destination=None) -> list:
     '''
     Function to load transformed data `transdata`.
  
-    :param transData: The transformed data to be loaded.
-    :param destination: The format of destination to be loaded to.
-    :returns: Currently returns nothing. Just prints.
+Parameters
+----------
+transData: The transformed data to be loaded.
+destination: The format of destination to be loaded to.
+
+Returns
+----------
+Currently returns nothing. Just prints.
 
     '''
 

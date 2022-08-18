@@ -1,24 +1,28 @@
 import extractFunctions
 import transformFunctions
-import LoadData
-from functions import logfunc
+import loadFunctions
+import globalFunctions
 
 url = 'https://raw.githubusercontent.com/woocommerce/woocommerce/master/sample-data/sample_products.csv'
 
-extractFunctions.extractUrlData(url,'rawData.csv')
+def main():
+    extractFunctions.extractUrlData(url,'rawData/rawData.csv')
 
-extractFunctions.refineRawData('rawData.csv','refineData.csv',['ID','Name','Categories','Images'])
+    extractFunctions.refineRawData('rawData/rawData.csv','data/refineData.csv',['ID','Name','Categories','Images'])
 
-transformFunctions.colsplit('refineData.csv','Categories','>',['Categories','Sub_Categories'])
+    transformFunctions.colSplit('data/refineData.csv','Categories','>',['Categories','Sub_Categories'])
 
-transformFunctions.df_strip('refineData.csv',['Categories'])
+    transformFunctions.df_strip('data/refineData.csv',['Categories'])
 
-transformFunctions.idGeneration('refineData.csv','Categories','CAT-','category','catID.csv')
+    transformFunctions.idGeneration('data/refineData.csv','Categories','CAT-','category','data/catID.csv')
 
-transformFunctions.idGeneration('refineData.csv','Sub_Categories','SUBCAT-','subcategory','subcatID.csv')
+    transformFunctions.idGeneration('data/refineData.csv','Sub_Categories','SUBCAT-','subcategory','data/subcatID.csv')
 
-transformFunctions.id_mapping('refineData.csv','y','y','y')
+    transformFunctions.id_mapping('data/refineData.csv','y','y','y')
 
-transformFunctions.df_drop('refineData.csv',['Categories','Sub_Categories','Images'])
+    transformFunctions.df_drop('data/refineData.csv',['Categories','Sub_Categories','Images'])
 
-LoadData.load('refineData.csv')
+    loadFunctions.load('data/refineData.csv')
+
+if __name__=="__main__":
+    main()
